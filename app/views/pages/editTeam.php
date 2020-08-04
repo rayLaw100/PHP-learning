@@ -43,12 +43,32 @@ var_dump($data);
                             </div>
 
                             <div class="form-group text-center mt-3">
-                                
+
                                 <input type="submit" value="Edit team" class="btn btn-success" id="btn-edit">
                                 <button type="button" class="btn btn-outline-secondary" id="btn-cancel">Cancel</button>
                                 <input type="hidden" id="id" name="id" value="<?= $team->id ?>">
                                 <input type="hidden" id="act" name="act" value="DO-UPDATE">
                             </div>
+                            <!-- <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group mb-2">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="username" name="username" value="<?= strstr($team->email, '@', true) ?>" maxlength="50" placeholder="E-mail">
+                                            <div class="input-group-append">
+                                                <select class="custom-select" name="domain" id="domain">
+                                                    <?php //foreach ($data['md_dn'] as $dn) { ?>
+                                                        <?php //if (strstr($team->email, '@', false)  == $dn->val) { ?>
+                                                            <option value="<?=// $dn->val ?>" selected><?= //$dn->val ?></option>
+                                                        <?php //} else { ?>
+                                                            <option value="<?= //$dn->val ?>"><?= //$dn->val ?></option>
+                                                        <?php //} ?>
+                                                    <?php //} ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
